@@ -1,0 +1,22 @@
+TRUNCATE consultas, pet, clientes RESTART IDENTITY CASCADE;
+
+CREATE TABLE IF NOT EXISTS clientes (
+id    SERIAL PRIMARY KEY,
+nome  VARCHAR(100),
+email VARCHAR(100) UNIQUE
+);
+
+CREATE TABLE IF NOT EXISTS pet (
+id         SERIAL PRIMARY KEY,
+nome       VARCHAR(100),
+especie    VARCHAR(50),
+id_cliente INT REFERENCES clientes(id)
+);
+
+CREATE TABLE IF NOT EXISTS consultas (
+id        SERIAL PRIMARY KEY,
+data      DATE,
+descricao TEXT,
+valor     NUMERIC(10,2) DEFAULT 0,
+id_pet    INT REFERENCES pet(id)
+);
