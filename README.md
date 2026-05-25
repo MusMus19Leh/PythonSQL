@@ -32,5 +32,14 @@ Sistema desktop para gerenciamento de clinicas veterinarias, desenvolvido em Pyt
 
 ---
 
-## Estrutura do Projeto
+## Instrucoes de Execucao
 
+### 1. Pre-requisitos
+
+- [Python 3.x](https://www.python.org/downloads/)
+- [PostgreSQL](https://www.postgresql.org/download/)
+
+### 2. Instalar dependencias
+
+```bash
+pip install psycopg2-binary matplotlib
