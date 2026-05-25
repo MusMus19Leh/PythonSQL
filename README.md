@@ -43,3 +43,6 @@ Sistema desktop para gerenciamento de clinicas veterinarias, desenvolvido em Pyt
 
 ```bash
 pip install psycopg2-binary matplotlib
+
+Alno(a):Leticia de Oliveira Saores Leandro
+Professor:Anderson Soares Costa 
